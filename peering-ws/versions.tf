@@ -5,7 +5,7 @@ terraform {
     organization = "thazin-team7-lab"
 
     workspaces {
-      name = "peering-ws"
+      name = "peering-vcs-ws"
     }
   }
 

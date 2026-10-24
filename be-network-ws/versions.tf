@@ -5,7 +5,7 @@ terraform {
     organization = "thazin-team7-lab"
 
     workspaces {
-      name = "be-network-ws"
+      name = "be-network-vcs-ws"
     }
   }
 

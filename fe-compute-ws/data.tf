@@ -6,7 +6,7 @@ data "terraform_remote_state" "fe_network" {
     organization = "thazin-team7-lab"
 
     workspaces = {
-      name = "fe-network-ws"
+      name = "fe-network-vcs-ws"
     }
   }
 }
@@ -19,7 +19,7 @@ data "terraform_remote_state" "fe_security" {
     organization = "thazin-team7-lab"
 
     workspaces = {
-      name = "fe-security-ws"
+      name = "fe-security-vcs-ws"
     }
   }
 }

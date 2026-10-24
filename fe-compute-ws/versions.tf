@@ -6,7 +6,7 @@ terraform {
     organization = "thazin-team7-lab"
 
     workspaces {
-      name = "fe-compute-ws"
+      name = "fe-compute-vcs-ws"
     }
   }
 

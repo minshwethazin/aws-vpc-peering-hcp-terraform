@@ -6,7 +6,7 @@ data "terraform_remote_state" "be_network" {
     organization = "thazin-team7-lab"
 
     workspaces = {
-      name = "be-network-ws"
+      name = "be-network-vcs-ws"
     }
   }
 }
@@ -19,7 +19,7 @@ data "terraform_remote_state" "be_security" {
     organization = "thazin-team7-lab"
 
     workspaces = {
-      name = "be-security-ws"
+      name = "be-security-vcs-ws"
     }
   }
 }
