@@ -1,0 +1,22 @@
+# Terraform generated files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform.tfstate.lock.info
+crash.log
+crash.*.log
+
+# Credentials and local configuration
+*.pem
+*.key
+*.tfvars
+*.tfvars.json
+.env
+.env.*
+.terraformrc
+terraform.rc
+
+# macOS
+.DS_Store
+peering-ws/outputvalue.txt
