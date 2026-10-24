@@ -1,11 +1,9 @@
 output "frontend_public_instance_public_ip" {
-  description = "Public IP of the frontend instance"
-  value       = aws_instance.frontend_public_instance01.public_ip
+  value = aws_eip.frontend_public_instance_eip.public_ip
 }
 
 output "frontend_public_instance_public_dns" {
-  description = "Public DNS of the frontend instance"
-  value       = aws_instance.frontend_public_instance01.public_dns
+  value = aws_eip.frontend_public_instance_eip.public_dns
 }
 
 output "frontend_private_instance01_private_ip" {
@@ -23,7 +21,3 @@ output "frontend_private_instance03_private_ip" {
   value       = aws_instance.frontend_private_instance03.private_ip
 }
 
-output "fe_instances_private_key" {
-  value     = tls_private_key.fe_keypair.private_key_openssh
-  sensitive = true
-}
