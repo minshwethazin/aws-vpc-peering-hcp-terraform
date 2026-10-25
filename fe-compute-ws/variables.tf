@@ -34,7 +34,7 @@ variable "frontend_private_subnet_cidr" {
 
 variable "fe_instance_type" {
   description = "Specifies the AWS instance type."
-  default     = "t3.micro"
+  default     = "t2.micro"
 }
 
 #############################################################

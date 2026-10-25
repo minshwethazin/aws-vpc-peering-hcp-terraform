@@ -1,6 +1,9 @@
+output "backend_public_instance_public_ip" {
+  value = aws_eip.backend_public_instance_eip.public_ip
+}
+
 output "backend_public_instance_public_dns" {
-  description = "Public DNS of the backend instance"
-  value       = aws_instance.backend_public_instance01.public_dns
+  value = aws_eip.backend_public_instance_eip.public_dns
 }
 
 output "backend_private_instance01_private_ip" {
